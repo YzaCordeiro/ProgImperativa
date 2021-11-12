@@ -7,25 +7,65 @@ var brigadeiro = 5;
 console.log ("Bem vindo ao SuperMicro!")
 console.log ("Menu: \n 1 - Pipoca \n 2 - Macarrão \n 3 - carne \n 4 - Feijão \n 5 - Brigadeiro \n");
 
-// var opcao = prompt ("Insira sua opção")
-//var opcao = require('prompt-sync')();
-var opcao = 11
-if (opcao == 1){
-    console.log ("Informe o tempo de preparo \n *Tempo recomendado: 10");
+function usuario (opcao){
+    var usuario = opcao;
+    return usuario;
 }
-else if (opcao == 2){
-    console.log ("Informe o tempo de preparo \n *Tempo recomendado: 8");
 
-} else if (opcao == 3){
-    console.log ("Informe o tempo de preparo \n *Tempo recomendado: 15");
+var valor = usuario (4);
+console.log( "==> " + valor);
 
-} else if (opcao == 4){
-    console.log ("Informe o tempo de preparo \n *Tempo recomendado: 12");
+switch (valor){
 
-}else if (opcao == 5) {
-    console.log ("Informe o tempo de preparo \n *Tempo recomendado: 8");
+    case 1: console.log ("Informe o tempo de preparo \n *Tempo recomendado: 10");
 
-} else {
-    console.log ("\nPrato Inexistente")
+    var tempo = usuario(24);
+console.log("==> " + tempo);
+
+if (tempo <10){ console.log("Tempo insuficiente!")}
+else if (tempo >29){ console.log ("KABUM")}
+else{ console.log("Prato Pronto, bom apetite!!!");}
+        break;
+
+        case 2: console.log ("Informe o tempo de preparo \n *Tempo recomendado: 8");
+
+        var tempo = usuario(24);
+console.log("==> " + tempo)
+
+if (tempo <8){ console.log("Tempo insuficiente!")}
+else if (tempo >23){ console.log ("KABUM")}
+else{ console.log("Prato Pronto, bom apetite!!!");}
+            break;
+
+            case 3: console.log ("Informe o tempo de preparo \n *Tempo recomendado: 15");
+
+            var tempo = usuario(44);
+console.log("==> " + tempo)
+
+if (tempo <15){ console.log("Tempo insuficiente!")}
+else if (tempo >44){ console.log ("KABUM")}
+else{ console.log("Prato Pronto, bom apetite!!!");}
+                break;
+
+                case 4: console.log ("Insira sua opção: \n*Tempo recomendado: 12");
+
+                var tempo = usuario(24);
+console.log("==> " + tempo)
+
+if (tempo <12){ console.log("Tempo insuficiente!")}
+else if (tempo >35){ console.log ("KABUM")}
+else{ console.log("Prato Pronto, bom apetite!!!");}
+                    break;
+
+                    case 5: console.log ("Informe o tempo de preparo \n *Tempo recomendado: 8");
+
+var tempo = usuario(24);
+
+console.log("==> " + tempo)
+if (tempo <8){ console.log("Tempo insuficiente!")}
+else if (tempo >23){ console.log ("KABUM")}
+else{ console.log("Prato Pronto, bom apetite!!!");}
+                        break;
+                        default: console.log ("\nPrato Inexistente");
+    
 }
-var tempo;
