@@ -12,7 +12,7 @@ function usuario (opcao){
     return usuario;
 }
 
-var valor = usuario (1);
+var valor = usuario (4);
 console.log( "==> " + valor);
 let tempo = usuario(0);
 switch (valor){
@@ -23,7 +23,7 @@ switch (valor){
 console.log("==> " + tempo);
 
 if (tempo <10){ console.log("Tempo insuficiente!")}
-//else if (tempo >19 && tempo <30){"A comida queimou!"}
+else if (tempo >20 && tempo <30 ){console.log("A comida queimou!");}
 else if (tempo >=30){ console.log ("KABUM")}
 else{ console.log("Prato Pronto, bom apetite!!!");}
         break;
@@ -34,6 +34,7 @@ else{ console.log("Prato Pronto, bom apetite!!!");}
 console.log("==> " + tempo)
 
 if (tempo <8){ console.log("Tempo insuficiente!")}
+else if (tempo >16 && tempo <24 ){console.log("A comida queimou!");}
 else if (tempo >23){ console.log ("KABUM")}
 else{ console.log("Prato Pronto, bom apetite!!!");}
             break;
@@ -44,16 +45,18 @@ else{ console.log("Prato Pronto, bom apetite!!!");}
 console.log("==> " + tempo)
 
 if (tempo <15){ console.log("Tempo insuficiente!")}
+else if (tempo >30 && tempo <45 ){console.log("A comida queimou!");}
 else if (tempo >44){ console.log ("KABUM")}
 else{ console.log("Prato Pronto, bom apetite!!!");}
                 break;
 
                 case 4: console.log ("Insira sua opção: \n*Tempo recomendado: 12");
 
-                tempo = usuario(24);
+                tempo = usuario(36);
 console.log("==> " + tempo)
 
 if (tempo <12){ console.log("Tempo insuficiente!")}
+else if (tempo >24 && tempo <36){console.log("A comida queimou!");}
 else if (tempo >35){ console.log ("KABUM")}
 else{ console.log("Prato Pronto, bom apetite!!!");}
                     break;
@@ -64,6 +67,7 @@ tempo = usuario(24);
 
 console.log("==> " + tempo)
 if (tempo <8){ console.log("Tempo insuficiente!")}
+else if (tempo >16 && tempo <24){console.log("A comida queimou!");}
 else if (tempo >23){ console.log ("KABUM")}
 else{ console.log("Prato Pronto, bom apetite!!!");}
                         break;
